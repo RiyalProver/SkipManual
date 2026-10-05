@@ -1,0 +1,146 @@
+/* Clearflow: approachable service choices, bright blue, soft shapes. */
+.theme-clearflow { --demo-button:#0757ce; --demo-button-text:#fff; --demo-focus:#ed851e; color:#14364a; background:#fff; }
+.theme-clearflow .demo-brand,.theme-clearflow h1,.theme-clearflow h2,.theme-clearflow h3 { font-family:var(--font-sans); }
+.theme-clearflow .demo-brand { font-size:1.5rem; font-weight:750; letter-spacing:-.045em; }
+.theme-clearflow .demo-brand svg { color:#0757ce; }
+.theme-clearflow h1 { font-size:clamp(3.2rem,5.3vw,5.1rem); font-weight:650; line-height:1.02; letter-spacing:-.065em; }
+.theme-clearflow h1 span { color:#0757ce; }
+.theme-clearflow h2 { font-size:clamp(2.2rem,3.4vw,3.3rem); font-weight:600; line-height:1.08; letter-spacing:-.05em; }
+.theme-clearflow h3 { letter-spacing:-.035em; font-weight:600; }
+.theme-clearflow .demo-kicker { color:#0757ce; font-weight:650; letter-spacing:.1em; }
+.theme-clearflow .demo-button { border-radius:100px; }
+.theme-clearflow .demo-header { min-height:100px; border-bottom:1px solid #dce8ee; }
+.clearflow-hero { display:grid; grid-template-columns:1.05fr 1fr; gap:3rem; padding-block:3.5rem; align-items:center; }
+.clearflow-hero > div > p:not(.demo-kicker) { margin-top:1.6rem; font-size:1.02rem; line-height:1.75; color:#4a6371; }
+.trade-actions { display:flex; flex-wrap:wrap; align-items:center; gap:1.1rem 1.4rem; margin-top:1.8rem; }
+.trade-actions .demo-text-link { margin-top:0; }
+.clearflow-hero-note { margin-top:2rem; display:flex; align-items:center; gap:.9rem; font-size:.73rem; color:#4a6371; }
+.clearflow-hero-note svg { width:32px; height:32px; color:#0757ce; }
+.clearflow-picture { position:relative; margin:0; padding-bottom:2rem; }
+.clearflow-picture > img { width:100%; height:550px; object-fit:cover; border-radius:160px 160px 20px 20px; }
+.clearflow-picture figcaption { position:absolute; left:-1.5rem; bottom:0; width:255px; padding:1.4rem 1.6rem; background:#d9f3fa; border:7px solid #fff; border-radius:20px; }
+.clearflow-picture figcaption span { font-size:.72rem; display:block; margin-bottom:.4rem; }
+.clearflow-picture figcaption strong { font-size:1.4rem; line-height:1.2; font-weight:600; letter-spacing:-.04em; }
+.clearflow-picture figcaption svg { position:absolute; right:1.1rem; top:1.3rem; width:27px; height:27px; color:#0757ce; }
+.clearflow-ribbon { display:flex; justify-content:space-between; gap:1rem; padding-block:1.6rem; border-block:1px solid #dce8ee; font-size:.78rem; font-weight:550; }
+.clearflow-finder { padding-block:6rem; display:grid; grid-template-columns:1fr 1fr; gap:6rem; }
+.clearflow-finder > div > p:not(.demo-kicker) { margin-top:1.2rem; font-size:.95rem; color:#4a6371; }
+.trade-choices { display:grid; gap:.65rem; margin-top:1.8rem; }
+.trade-choices button { display:flex; align-items:center; gap:.9rem; padding:1rem 1.15rem; text-align:left; font-size:.87rem; min-height:56px; background:transparent; color:inherit; border:1px solid #c8d9e2; border-radius:8px; }
+.trade-choices button svg { width:20px; height:20px; flex-shrink:0; }
+.trade-choices button svg:last-child { margin-left:auto; }
+.theme-clearflow .trade-choices button[aria-pressed='true'] { background:#0757ce; color:#fff; border-color:#0757ce; }
+.finder-answer { background:#eef7fb; border-radius:20px; padding:2.5rem; min-height:470px; margin-bottom:1rem; }
+.finder-symbol { display:flex; align-items:center; justify-content:center; width:80px; height:80px; background:#d9edf8; border-radius:50%; color:#0757ce; margin-bottom:2rem; }
+.finder-symbol svg { width:38px; height:38px; }
+.finder-answer h3 { font-size:2rem; line-height:1.12; margin-bottom:1.1rem; }
+.finder-answer p:not(.demo-kicker) { color:#4a6371; font-size:.95rem; }
+.finder-answer .demo-button { margin-top:1rem; }
+.trade-inline { display:block; font-size:.78rem; text-decoration:underline; text-underline-offset:4px; margin-top:1.5rem; }
+.clearflow-hotwater { background:#e1f2f8; padding-block:4.5rem; }
+.clearflow-hotwater > div { display:grid; grid-template-columns:.8fr 1fr; align-items:center; gap:6rem; }
+.water-illustration { display:grid; place-items:center; width:280px; height:280px; border:1px solid #8ab6cc; border-radius:50%; margin:auto; box-shadow:0 0 0 24px #d6ecf5,0 0 0 25px #b9d6e3; color:#0757ce; }
+.water-illustration svg { width:120px; height:120px; }
+.clearflow-hotwater h2 + p { max-width:460px; margin-top:1.5rem; }
+.trade-closing { padding-block:4.5rem; }
+.trade-closing > div { display:flex; align-items:center; justify-content:space-between; gap:3rem; }
+.trade-closing p { margin-top:1.2rem; }
+.theme-clearflow .demo-footer { background:#123c58; color:#f4fbff; }
+.theme-clearflow .demo-footer-bottom,.theme-clearflow .demo-footer-top { border-color:#416176; }
+.theme-clearflow .demo-request-form { border:1px solid #c8d9e2; border-radius:16px; background:#eef7fb; }
+.theme-clearflow .demo-disclosure { background:#eef7fb; border-color:#0757ce; }
+.plumbing-service-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; padding-bottom:3.5rem; }
+.plumbing-service-grid article { border:1px solid #dce8ee; border-radius:16px; padding:2rem; scroll-margin-top:6rem; }
+.plumbing-service-icon { display:block; color:#0757ce; margin-bottom:1.5rem; }
+.plumbing-service-icon svg { width:34px; height:34px; }
+.plumbing-service-grid h2 { font-size:2.1rem; margin-bottom:1rem; }
+.plumbing-service-grid h3 { font-size:1rem; margin-bottom:1rem; }
+.plumbing-service-grid p { font-size:.93rem; color:#4a6371; }
+.trade-note { padding:1.6rem 2rem; border-left:3px solid currentColor; background:#eef7fb; margin-block:2rem 4rem; font-size:.9rem; }
+.trade-note p { margin:.6rem 0 0; }
+.water-options { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+.water-options article { padding:2.5rem; border-radius:16px; background:#eef7fb; }
+.water-options article h2 { margin-bottom:2rem; }
+.water-options li { margin-bottom:1rem; }
+.water-options p { font-size:.9rem; margin-top:2rem; }
+.trade-faq h2 { margin-bottom:2rem; }
+.trade-faq details { border-top:1px solid #c8d9e2; padding:1.2rem 0; }
+.trade-faq summary { cursor:pointer; padding-block:.3rem; font-weight:550; }
+.trade-faq details p { max-width:800px; margin-top:1rem; }
+/* Ridgeline: wide architectural photographs, serif type, rust and stone. */
+.theme-ridgeline { --demo-button:#953d25; --demo-button-text:#fffaf2; --demo-focus:#ae583b; color:#302e29; background:#f5f1e8; }
+.theme-ridgeline .demo-header { border-bottom:1px solid #d2ccbf; min-height:105px; }
+.theme-ridgeline .demo-brand { font-family:var(--font-sans); font-size:1.3rem; font-weight:600; letter-spacing:-.05em; }
+.theme-ridgeline .demo-brand svg { color:#953d25; width:34px; height:34px; }
+.theme-ridgeline .demo-kicker { color:#893b26; }
+.theme-ridgeline h1 em,.theme-ridgeline h2 em { color:#893b26; }
+.ridge-title { display:grid; grid-template-columns:1.25fr 1fr; align-items:end; gap:4rem; padding-block:3.5rem; }
+.ridge-title h1 { font-size:clamp(4.8rem,7.7vw,7.8rem); }
+.ridge-title > div:last-child { padding-bottom:.5rem; justify-self:end; }
+.ridge-title > div:last-child p { line-height:1.7; margin-bottom:1.7rem; }
+.ridge-landscape { margin:0; position:relative; }
+.ridge-landscape img { width:100%; height:490px; object-fit:cover; object-position:50% 46%; }
+.ridge-landscape figcaption { position:absolute; bottom:0; left:0; right:0; display:flex; justify-content:space-between; gap:1rem; padding:2.5rem max(4rem,calc((100% - 1200px)/2)); background:linear-gradient(transparent,#141b13b3); color:#fff; font-size:.62rem; letter-spacing:.15em; }
+.ridge-intro { display:grid; grid-template-columns:1fr 1fr; gap:7rem; align-items:center; }
+.ridge-intro > div:last-child p { font-size:1.08rem; line-height:1.85; }
+.ridge-service-band { background:#302e29; color:#f5f1e8; padding-block:4rem; }
+.ridge-service-band > div { display:grid; grid-template-columns:repeat(3,1fr); gap:3rem; }
+.ridge-service-band article { padding-right:1.5rem; border-right:1px solid #625e52; }
+.ridge-service-band article:last-child { border:0; padding-right:0; }
+.ridge-service-band article > span { font-size:.7rem; color:#dac7b5; }
+.ridge-service-band h2 { font-size:2.5rem; margin:2rem 0 1rem; }
+.ridge-service-band p { font-size:.9rem; max-width:250px; }
+.ridge-service-band .demo-text-link { font-size:.8rem; }
+.ridge-decision { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:6rem; }
+.ridge-decision p:not(.demo-kicker) { margin-top:1.5rem; max-width:380px; }
+.ridge-line-art { background:#e9e2d5; color:#893b26; padding:3rem 2rem; aspect-ratio:1; display:flex; flex-direction:column; justify-content:center; align-items:center; }
+.ridge-line-art svg { width:100%; }
+.ridge-line-art span { font-size:.6rem; letter-spacing:.18em; margin-top:2rem; }
+.theme-ridgeline .trade-closing { border-top:1px solid #d2ccbf; }
+.theme-ridgeline .demo-footer { background:#302e29; color:#f5f1e8; }
+.theme-ridgeline .demo-footer-bottom,.theme-ridgeline .demo-footer-top { border-color:#625e52; }
+.ridge-services article { display:grid; grid-template-columns:60px 1fr 1fr; gap:3rem; padding-block:3rem; border-top:1px solid #d2ccbf; scroll-margin-top:6rem; }
+.ridge-services article > span { font-size:.72rem; color:#893b26; }
+.ridge-services h2 { font-size:3rem; margin-bottom:1rem; }
+.ridge-services h3 { font:500 .92rem var(--font-sans); line-height:1.5; max-width:270px; }
+.ridge-services p { font-size:.95rem; }
+.roof-materials > p:not(.demo-kicker) { max-width:610px; margin-top:1.5rem; }
+.roof-materials > div { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; margin-top:2.5rem; }
+.material-swatch { height:130px; margin-bottom:1.5rem; }
+.material-0 { background:repeating-linear-gradient(0deg,transparent 0 22px,#514f49 22px 24px),repeating-linear-gradient(90deg,#807a6d 0 60px,#706b60 60px 120px); }
+.material-1 { background:repeating-linear-gradient(90deg,#90978f 0 35px,#697267 36px,#c2c9c0 38px,#90978f 40px); }
+.material-2 { background:repeating-linear-gradient(0deg,transparent 0 38px,#713a2b 38px 41px),repeating-linear-gradient(90deg,#a1684a 0px,#c6946b 18px,#95583e 36px,#7b4a35 40px); }
+.roof-materials h3 { font-size:2rem; margin-bottom:.7rem; }
+.roof-materials strong { font-size:.85rem; font-weight:550; }
+.roof-materials article p { font-size:.85rem; margin-top:.7rem; }
+.roof-guide { display:grid; grid-template-columns:.85fr 1.15fr; gap:4rem; margin-bottom:3rem; }
+.roof-guide > div > h2 { font-size:3rem; margin-bottom:1.5rem; }
+.theme-ridgeline .trade-choices button { border-radius:0; border-color:#bdb5a6; }
+.theme-ridgeline .trade-choices button[aria-pressed='true'] { background:#302e29; color:#f5f1e8; border-color:#302e29; }
+.trade-choices button > span { font-size:.63rem; white-space:nowrap; }
+.roof-guide-answer { padding:2.5rem; background:#e9e2d5; margin-bottom:1rem; }
+.roof-guide-answer h3 { font-size:2.6rem; line-height:1; margin-bottom:1.5rem; }
+.roof-guide-answer h4 { margin-top:2rem; font-size:.8rem; text-transform:uppercase; letter-spacing:.1em; }
+.roof-guide-answer ul { padding-left:1.2rem; font-size:.9rem; margin:1rem 0 2rem; }
+.roof-guide-answer li { margin-bottom:.7rem; }
+.theme-ridgeline .trade-note,.theme-ridgeline .demo-disclosure,.theme-ridgeline .demo-request-form { background:#e9e2d5; border-color:#953d25; }
+[data-choice-panel][hidden] { display:none; }
+@media(max-width:1100px) {
+  .clearflow-hero { gap:2rem; }.clearflow-picture > img { height:510px; }.clearflow-finder,.clearflow-hotwater > div,.ridge-intro,.ridge-decision { gap:3rem; }
+  .theme-clearflow .demo-nav,.theme-ridgeline .demo-nav { gap:1rem; }.theme-clearflow .demo-brand,.theme-ridgeline .demo-brand { font-size:1.2rem; }.theme-ridgeline .demo-nav { font-size:.75rem; }
+  .ridge-services article { gap:1.5rem; grid-template-columns:40px 1fr 1fr; }.roof-guide { gap:2rem; }.ridge-service-band > div { gap:1.5rem; }
+}
+@media(max-width:900px) and (min-width:761px) { .theme-clearflow .demo-header,.theme-ridgeline .demo-header { flex-wrap:wrap; padding-block:1.2rem; gap:1rem; }.theme-clearflow .demo-nav,.theme-ridgeline .demo-nav { width:100%; justify-content:space-between; } }
+@media(max-width:760px) {
+  .clearflow-hero,.clearflow-finder,.clearflow-hotwater > div,.water-options,.ridge-title,.ridge-intro,.ridge-decision,.roof-guide { grid-template-columns:1fr; gap:2.5rem; }
+  .clearflow-hero { padding-block:2.5rem; }.theme-clearflow h1 { font-size:clamp(3.2rem,10vw,4.6rem); }.clearflow-hero > div > p:not(.demo-kicker) { font-size:.95rem; }.clearflow-hero-note { margin-top:1.5rem; }
+  .clearflow-picture { max-width:470px; width:100%; margin-inline:auto; padding-left:1rem; }.clearflow-picture > img { height:400px; border-radius:120px 120px 16px 16px; }.clearflow-picture figcaption { left:0; width:235px; }
+  .clearflow-ribbon { flex-wrap:wrap; gap:.8rem 1.5rem; font-size:.7rem; }.clearflow-finder { padding-block:3.5rem; }.finder-answer { min-height:0; padding:1.6rem; }.finder-symbol { width:65px; height:65px; margin-bottom:1.5rem; }
+  .clearflow-hotwater { padding-block:3.5rem; }.water-illustration { width:150px; height:150px; margin-block:1.5rem; }.water-illustration svg { width:75px; height:75px; }
+  .trade-closing { padding-block:3.5rem; }.trade-closing > div { display:block; }.trade-closing .demo-button { margin-top:1.5rem; }.trade-closing p { font-size:.95rem; }
+  .plumbing-service-grid { grid-template-columns:1fr; }.plumbing-service-grid article,.water-options article { padding:1.6rem; }.trade-note { padding:1.3rem; }
+  .ridge-title { padding-block:2.5rem; }.ridge-title h1 { font-size:clamp(4.3rem,12vw,6rem); }.ridge-title > div:last-child { justify-self:start; }.ridge-landscape img { height:360px; }.ridge-landscape figcaption { padding:2rem 1.5rem; font-size:.54rem; }.ridge-landscape figcaption span:last-child { display:none; }
+  .ridge-service-band > div { grid-template-columns:1fr; gap:2rem; }.ridge-service-band article { border-right:0; border-bottom:1px solid #625e52; padding:0 0 2rem; }.ridge-service-band h2 { margin-top:1rem; }.ridge-service-band p { max-width:100%; }
+  .ridge-line-art { max-width:420px; width:100%; margin:auto; padding:1.5rem; }.ridge-services article { grid-template-columns:30px 1fr; gap:1rem; padding-block:2rem; }.ridge-services article > div:last-child { grid-column:2; }.ridge-services h2 { font-size:2.5rem; }
+  .roof-materials > div { grid-template-columns:1fr; gap:2rem; }.roof-materials > div article { max-width:500px; }.material-swatch { height:110px; }.roof-guide-answer { padding:1.5rem; }.roof-guide-answer h3 { font-size:2.3rem; }
+}

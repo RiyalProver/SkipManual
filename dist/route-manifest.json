@@ -1,0 +1,434 @@
+[
+  {
+    "path": "/how-it-works/",
+    "title": "How Your Website Project Works | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/book/",
+    "title": "Talk About Your Business Website | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/services/business-websites/",
+    "title": "Business-ready website for Local Businesses | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/services/inquiry-follow-up/",
+    "title": "Automatic inquiry follow-up for Local Businesses | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/services/missed-call-texts/",
+    "title": "Missed-call text replies for Local Businesses | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/services/review-requests/",
+    "title": "Review requests & reminders for Local Businesses | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/services/on-page-seo/",
+    "title": "On-page SEO foundations for Local Businesses | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/",
+    "title": "Websites & Customer Follow-Up for Local Businesses | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/services/",
+    "title": "What’s Included in the $249 Website Package | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/pricing/",
+    "title": "The $249/Month Website Package | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/examples/",
+    "title": "Website Examples & Original Concepts | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/about/",
+    "title": "About SkipManual | Good Websites. Less on Your Plate.",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/faq/",
+    "title": "Your Website Questions, Answered | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/contact/",
+    "title": "Let’s Build Your Business Website | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/privacy/",
+    "title": "Website Privacy Information | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/website-information/",
+    "title": "Website & Example Information | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/404/",
+    "title": "Page Not Found | SkipManual",
+    "demo": false,
+    "noindex": true
+  },
+  {
+    "path": "/examples/current-electric/",
+    "title": "Current Electric | Electrical Website Concept | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/examples/ridgeline-roofing/",
+    "title": "Ridgeline Roofing | Roofing Website Concept | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/examples/clearflow-plumbing/",
+    "title": "Clearflow Plumbing | Plumbing Website Concept | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/examples/form-studio/",
+    "title": "Form Studio | Wellness & fitness Website Concept | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/examples/olive-and-ember/",
+    "title": "Olive & Ember | Restaurant Website Concept | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/demos/current-electric/",
+    "title": "Home | Current Electric | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/current-electric/services/",
+    "title": "Services | Current Electric | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/current-electric/lighting/",
+    "title": "Lighting & upgrades | Current Electric | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/current-electric/request-a-quote/",
+    "title": "Request a quote | Current Electric | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/current-electric/repairs/",
+    "title": "Repairs & fault finding | Current Electric | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/current-electric/installations/",
+    "title": "Installations & additions | Current Electric | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/current-electric/renovations/",
+    "title": "Renovation planning | Current Electric | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/current-electric/gallery/",
+    "title": "Home project inspiration | Current Electric | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/current-electric/our-approach/",
+    "title": "Our approach | Current Electric | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/current-electric/questions/",
+    "title": "Electrical questions | Current Electric | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/ridgeline-roofing/",
+    "title": "Home | Ridgeline Roofing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/ridgeline-roofing/roofing/",
+    "title": "Roofing services | Ridgeline Roofing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/ridgeline-roofing/repair-or-replace/",
+    "title": "Repair or replace? | Ridgeline Roofing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/ridgeline-roofing/request-an-assessment/",
+    "title": "Request an assessment | Ridgeline Roofing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/ridgeline-roofing/roof-repairs/",
+    "title": "Roof repairs | Ridgeline Roofing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/ridgeline-roofing/roof-replacement/",
+    "title": "Roof replacement | Ridgeline Roofing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/ridgeline-roofing/materials/",
+    "title": "Roof materials | Ridgeline Roofing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/ridgeline-roofing/gallery/",
+    "title": "Roof inspiration | Ridgeline Roofing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/ridgeline-roofing/assessment-process/",
+    "title": "The assessment process | Ridgeline Roofing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/ridgeline-roofing/questions/",
+    "title": "Roofing questions | Ridgeline Roofing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/clearflow-plumbing/",
+    "title": "Home | Clearflow Plumbing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/clearflow-plumbing/services/",
+    "title": "Plumbing services | Clearflow Plumbing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/clearflow-plumbing/water-heaters/",
+    "title": "Water heaters | Clearflow Plumbing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/clearflow-plumbing/request-a-visit/",
+    "title": "Request a visit | Clearflow Plumbing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/clearflow-plumbing/leaks-and-fixtures/",
+    "title": "Leaks & fixtures | Clearflow Plumbing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/clearflow-plumbing/drains/",
+    "title": "Drains & blockages | Clearflow Plumbing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/clearflow-plumbing/bathroom-kitchen/",
+    "title": "Kitchen & bathroom updates | Clearflow Plumbing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/clearflow-plumbing/gallery/",
+    "title": "Home inspiration | Clearflow Plumbing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/clearflow-plumbing/what-to-expect/",
+    "title": "What to expect | Clearflow Plumbing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/clearflow-plumbing/questions/",
+    "title": "Plumbing questions | Clearflow Plumbing | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/form-studio/",
+    "title": "Home | Form Studio | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/form-studio/classes/",
+    "title": "Classes | Form Studio | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/form-studio/the-studio/",
+    "title": "The studio | Form Studio | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/form-studio/find-your-class/",
+    "title": "Find your class | Form Studio | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/form-studio/first-visit/",
+    "title": "Your first visit | Form Studio | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/form-studio/foundations/",
+    "title": "Foundations | Form Studio | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/form-studio/private-sessions/",
+    "title": "Private sessions | Form Studio | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/form-studio/gallery/",
+    "title": "Inside the studio | Form Studio | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/form-studio/movement-notes/",
+    "title": "Movement notes | Form Studio | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/form-studio/questions/",
+    "title": "Studio questions | Form Studio | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/olive-and-ember/",
+    "title": "Home | Olive & Ember | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/olive-and-ember/menu/",
+    "title": "Menu | Olive & Ember | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/olive-and-ember/our-story/",
+    "title": "Our story | Olive & Ember | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/olive-and-ember/book-a-table/",
+    "title": "A table for you | Olive & Ember | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/olive-and-ember/private-dining/",
+    "title": "Private dining | Olive & Ember | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/olive-and-ember/seasonal-kitchen/",
+    "title": "The seasonal kitchen | Olive & Ember | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/olive-and-ember/drinks/",
+    "title": "Drinks & a little more | Olive & Ember | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/olive-and-ember/gallery/",
+    "title": "Gallery | Olive & Ember | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/olive-and-ember/visit/",
+    "title": "Plan your visit | Olive & Ember | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  },
+  {
+    "path": "/demos/olive-and-ember/questions/",
+    "title": "Dining questions | Olive & Ember | SkipManual Example",
+    "demo": true,
+    "noindex": false
+  }
+]

@@ -1,0 +1,52 @@
+/* Primitives: the brand's raw values. */
+:root {
+  --ink-950: #242620;
+  --ink-700: #55584e;
+  --ink-500: #6d7065;
+  --paper-50: #f8f8f2;
+  --paper-100: #f0f1e9;
+  --paper-200: #dedfd5;
+  --white: #fff;
+  --orange-500: #ed4c24;
+  --orange-700: #b73010;
+  --olive-950: #252d23;
+  --olive-200: #e4e4ce;
+  --navy-950: #142e40;
+  --yellow-300: #f6d35c;
+  --lilac-100: #e9e2ef;
+  --plum-900: #403247;
+  --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem;
+  --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+  --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+  --font-sans: 'DM Sans Variable', sans-serif;
+  --font-serif: 'Cormorant Garamond Variable', Georgia, serif;
+  --radius-sm: 5px; --radius-md: 10px;
+  --duration-fast: 180ms;
+}
+/* Semantic: purpose, layout, and hierarchy. */
+:root {
+  --color-background: #ffffff;
+  --color-surface: #f7f8fa;
+  --color-foreground: var(--ink-950);
+  --color-muted: var(--ink-700);
+  --color-border: #e4e7eb;
+  --color-accent: var(--orange-500);
+  --color-link: var(--orange-700);
+  --color-inverse: var(--white);
+  --layout-width: 1240px;
+  --layout-gutter: clamp(1.25rem, 4.5vw, 5rem);
+  --section-space: clamp(4rem, 8vw, 7rem);
+  --heading-xl: clamp(3.5rem, 5.65vw, 5.4rem);
+  --heading-lg: clamp(2.5rem, 4.4vw, 4.1rem);
+  --heading-md: clamp(1.8rem, 2.8vw, 2.65rem);
+}
+/* Components: change these to evolve the shared interface. */
+:root {
+  --button-bg: var(--color-foreground);
+  --button-color: var(--color-inverse);
+  --button-radius: var(--radius-sm);
+  --input-bg: var(--white);
+  --input-border: var(--color-border);
+  --card-radius: var(--radius-md);
+  --preview-shadow: 0 24px 45px -26px rgb(36 38 32 / 35%);
+}
