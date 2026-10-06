@@ -8,16 +8,28 @@ const { site } = await import('../src/data/site.mjs');
 const { examples } = await import('../src/data/examples.mjs');
 const { layout } = await import('../src/components/ui.mjs');
 const { agencyPages, exampleDetail } = await import('../src/pages/agency.mjs');
+const { industryPages } = await import('../src/pages/industries.mjs');
 const { demoPages } = await import('../src/pages/demos.mjs');
 
 if (site.url) {
   const url = new URL(site.url);
-  if (!['http:','https:'].includes(url.protocol) || url.pathname !== '/' || url.search || url.hash) throw new Error('PUBLIC_SITE_URL must be an HTTP(S) origin, without a path, query, or fragment.');
+  if (url.protocol !== 'https:' || url.username || url.password || url.pathname !== '/' || url.search || url.hash) throw new Error('PUBLIC_SITE_URL must be an HTTPS origin, without a path, query, or fragment.');
 }
 if (site.contactEndpoint && !/^https?:\/\//.test(site.contactEndpoint) && !site.contactEndpoint.startsWith('/')) throw new Error('Contact endpoint must be an HTTP(S) URL or same-origin path.');
 if (site.email && !/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(site.email)) throw new Error('PUBLIC_CONTACT_EMAIL must be a valid, verified email address.');
 
 if(site.bookingUrl) { const booking=new URL(site.bookingUrl); if(booking.protocol!=='https:'||booking.username||booking.password)throw new Error('PUBLIC_BOOKING_URL must be a verified HTTPS booking URL.'); }
+const pages = [...agencyPages,...industryPages,...examples.map(e=>({path:`/examples/${e.slug}/`,title:`${e.name} | ${e.category} Website Concept | SkipManual`,description:`Explore ${e.name}, an original ${e.category.toLowerCase()} example website by SkipManual. See the design approach, useful features, and the complete fictional website.`,render:()=>exampleDetail(e)})),...demoPages()];
+// Reject duplicate routes and missing or repeated metadata before replacing dist.
+for(const key of ['path','title','description']) {
+  const seen=new Set();
+  for(const page of pages) {
+    const value=page[key]?.trim();
+    if(!value||seen.has(value))throw new Error(`Missing or duplicate ${key}: ${page.path}`);
+    seen.add(value);
+  }
+}
+for(const page of pages)if(!/^\/(?:[a-z0-9-]+\/)*$/.test(page.path))throw new Error(`Invalid page path: ${page.path}`);
 const dist = path.join(root,'dist');
 // Only replace this generated directory, after verifying its resolved location.
 if(dist!==path.resolve(root,'dist')||!dist.startsWith(root+path.sep))throw new Error('Unsafe build output location.');
@@ -28,7 +40,6 @@ await fs.mkdir(dist,{recursive:true});
 await fs.cp(path.join(root,'public'),dist,{recursive:true,filter:source=>!source.endsWith('-source.jpg')&&!source.endsWith('.ttf')});
 await fs.cp(path.join(root,'src/styles'),path.join(dist,'styles'),{recursive:true});
 await fs.cp(path.join(root,'src/scripts'),path.join(dist,'scripts'),{recursive:true});
-const pages = [...agencyPages,...examples.map(e=>({path:`/examples/${e.slug}/`,title:`${e.name} | ${e.category} Website Concept | SkipManual`,description:`Explore ${e.name}, an original ${e.category.toLowerCase()} example website by SkipManual. See the design approach, useful features, and the complete fictional website.`,render:()=>exampleDetail(e)})),...demoPages()];
 for (const page of pages) {
   const out = path.join(dist,page.path,'index.html');
   await fs.mkdir(path.dirname(out),{recursive:true});

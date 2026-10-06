@@ -58,7 +58,7 @@ try {
       assert(!/lorem ipsum|trusted by \d|five.star reviews|guaranteed rankings/i.test(result.text),`Placeholder or unsupported claim: ${label}`);
       assert(!/\bdemos?\b/i.test(result.text+' '+result.title+' '+result.description+' '+result.publicLabels),`Old public wording: ${label}`);
       if(entry.demo){assert.match(result.robots,/noindex/);assert.match(result.text,/fictional/i);assert(!result.schema,'Fictional demo must not carry LocalBusiness schema');}
-      else if(!entry.noindex)assert.equal(JSON.parse(result.schema)['@type'],'LocalBusiness');
+      else if(!entry.noindex)assert(JSON.parse(result.schema)['@graph'].some(node=>node['@type']==='LocalBusiness'),'Missing business entity');
       if(width===1440){assert(!titles.has(result.title),'Duplicate title');titles.add(result.title);assert(!descriptions.has(result.description),'Duplicate description');descriptions.add(result.description);result.links.forEach(l=>links.add(l));}
       allChecks.push({width,path:entry.path,status:'passed'});
     }

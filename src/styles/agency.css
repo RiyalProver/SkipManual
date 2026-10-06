@@ -87,3 +87,53 @@ body:not(.demo-body) h3 { letter-spacing:-.025em; }
   .footer-col a { font-size:.8rem; }.footer-grid { grid-template-columns:1fr 1fr; }.footer-col:last-child { grid-column:1/-1; }.site-footer { padding-bottom:1rem; }
 }
 @media(prefers-reduced-motion:reduce) { .business-mosaic img { transition:none; } }
+
+/* Comfortable reading sizes for business owners, with centered navigation. */
+.industry-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2.5rem; }
+.industry-grid article { border-top:1px solid #dbe0e1; padding-top:1.5rem; min-width:0; }
+.industry-grid h3 { font-size:1.4rem; line-height:1.35; }
+.industry-grid h3 a:hover { color:var(--color-link); }
+.industry-grid p { margin-top:1rem; }
+.industry-grid .text-link { margin-top:1rem; }
+.industry-service-link { margin-top:2rem; }
+.industry-service-link a { text-decoration:underline; text-underline-offset:4px; }
+@media(max-width:1050px) { .industry-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:760px) { .industry-grid { grid-template-columns:1fr; gap:2rem; } }
+body:not(.demo-body) { font-size:18px; }
+body:not(.demo-body) :is(.lead,.section-head > p,.plain-offer .lead,.plain-service-list p,.direct-work-card > p,.simple-steps p,.price-card p,.faq-item p,.principles-grid p,.service-stories ul,.service-detail-content article p,.service-detail-content aside li,.full-process p,.booking-agenda li span,.message p,.scenario-outcome p,.note-box p,.process-grid p,.service-row ul) { font-size:1.125rem; line-height:1.7; }
+body:not(.demo-body) :is(.button,.text-link,.human-hero .actions .text-link,.hero-offer p,.hero-offer > strong > span,.hero-reassurance,.industry-access > p,.industry-access > a,.work-links a,.direct-work-card .work-category,.industry-filter a,.service-jump a,.collection-disclosure,.footer-brand p,.footer-col a,.footer-col h2,.footer-bottom,.price-card .small,.price-kicker,.small,.faq-index a,.form-intro,.form-note,.form-feedback,.form-availability p,.simple-inquiry .field label,.optional-inquiry summary,.inquiry-context,.simple-inquiry .brief-output label,.brief-output textarea,.scenario-choices button,.conversation-header strong,.conversation-note,.mobile-action-bar > a,.agency-breadcrumb) { font-size:1rem; }
+.human-hero-copy > p:not(.eyebrow):not(.hero-reassurance) { font-size:1.25rem; }
+.human-hero-copy .eyebrow,.eyebrow { font-size:.875rem; }
+.site-utility { font-size:.9375rem; }
+.plain-service-list h3 { font-size:1.25rem; }
+.faq-item summary { font-size:1.125rem; }
+.simple-inquiry .field input,.simple-inquiry .field select,.simple-inquiry .field textarea { font-size:1.125rem; }
+.button { gap:.8rem; text-align:center; }
+.hero-offer { flex-wrap:wrap; }
+.industry-access { flex-wrap:wrap; }
+.hero-reassurance svg,.industry-access svg { flex-shrink:0; }
+.header-inner { display:grid; grid-template-columns:minmax(170px,1fr) auto minmax(170px,1fr); gap:1.5rem; }
+.header-inner > .brand { justify-self:start; }
+.desktop-nav { justify-content:center; gap:1.5rem; }
+.desktop-nav > a:not(.button) { font-size:1.125rem; font-weight:600; white-space:nowrap; }
+.header-booking { justify-self:end; }
+@media(max-width:1050px) {
+  .site-header { height:80px; }
+  .header-inner { display:flex; justify-content:space-between; gap:1rem; }
+  .desktop-nav,.header-booking { display:none; }
+  .mobile-nav { display:block; }
+  .mobile-nav summary { list-style:none; border:1px solid var(--color-border); border-radius:4px; padding:.6rem .9rem; cursor:pointer; font-size:1.0625rem; min-height:44px; }
+  .mobile-nav summary::-webkit-details-marker { display:none; }
+  .mobile-nav summary::after { content:'+'; margin-left:1rem; }
+  .mobile-nav[open] summary::after { content:'−'; }
+  .mobile-nav nav { position:absolute; top:79px; left:0; right:0; background:#fff; padding:1rem var(--layout-gutter) 1.5rem; border-bottom:1px solid var(--color-border); box-shadow:0 12px 20px #0001; max-height:calc(100dvh - 125px); overflow:auto; }
+  .mobile-nav nav a { display:block; padding:.75rem 0; border-bottom:1px solid var(--color-border); font-size:1.125rem; }
+  .mobile-nav nav .button { display:flex; margin-top:1rem; padding:.8rem; }
+}
+@media(max-width:760px) {
+  .human-hero-copy > p:not(.eyebrow):not(.hero-reassurance) { font-size:1.125rem; }
+  .site-utility { font-size:.875rem; }
+  .business-mosaic > a > span { font-size:.875rem; }
+  .mobile-action-bar { gap:.5rem; padding-inline:.75rem; }
+  .mobile-action-bar > a { gap:.4rem; }
+}

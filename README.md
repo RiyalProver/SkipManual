@@ -1,6 +1,6 @@
 # SkipManual
 
-A static, multi-page agency website with five original, explicitly fictional example websites. The production build has **no runtime dependencies** and renders real HTML for all 72 routes. Each example contains 10 pages.
+A static, multi-page agency website with five original, explicitly fictional example websites. The production build has **no runtime dependencies** and renders real HTML for all 78 routes. Each example contains 10 pages.
 
 For the latest completed work and intentionally deferred connections, see [the project handoff](docs/project-handoff.md).
 
@@ -25,12 +25,12 @@ Deploy the generated `dist/` folder to any static host that supports directory i
 
 Copy `.env.example` to `.env` and fill in verified information only:
 
-- `PUBLIC_SITE_URL`: the final HTTPS origin, with no page path. Enables absolute canonicals, Open Graph URLs, and the sitemap.
+- `PUBLIC_SITE_URL`: defaults to the owner-confirmed `https://skipmanual.com`. Use only an HTTPS origin with no path. Canonicals, social URLs, and the sitemap use this origin.
 - `PUBLIC_CONTACT_EMAIL`: a verified inbox. Enables an explicit email-draft action; the visitor sends the message in their email application.
 - `PUBLIC_CONTACT_ENDPOINT`: optional JSON POST endpoint for direct form delivery. This takes priority over the email-draft flow.
 - `PUBLIC_BOOKING_URL`: the verified HTTPS scheduling page. Enables the calendar link on `/book/`. The owner has explicitly deferred connecting scheduling and contact details until the design is approved.
 
-Without a contact destination, the form openly operates as a local brief builder. It does **not** claim to send an inquiry. Without a public origin, no domain or canonical URL is invented.
+Without a contact destination, the form openly operates as a local brief builder. It does **not** claim to send an inquiry. The confirmed US target market is stored in `src/data/site.mjs`; no physical address or local office is invented.
 
 Confirm the scope, setup fees, commitment, ownership, cancellation, hosting, maintenance, revisions, support, timeline, and privacy/hosting details before launch. Unconfirmed commercial terms are `null` in the offer data and are not published as inclusions.
 
@@ -44,6 +44,9 @@ The form POSTs JSON containing `name`, `business`, `email`, `phone`, `businessTy
 
 | Location | Purpose |
 | --- | --- |
+| `src/data/seo.mjs` | Service search content, FAQ copy, breadcrumbs, and linked structured data |
+| `src/data/industries.mjs` | Distinct guidance for the five priority US business industries |
+| `src/pages/industries.mjs` | Industry hub and five industry service pages |
 | `src/data/site.mjs` | Agency identity, offer, navigation, process, FAQ, and a reserved collection for future verified testimonials |
 | `src/data/examples.mjs` | Example identities, design rationale, page links, and features |
 | `src/data/package.mjs` | Confirmed package services and everyday customer-conversation scenarios |
@@ -94,12 +97,13 @@ With the local server running:
 
 ```sh
 npm run audit
+npm run audit:seo
 npm run capture:pages
 ```
 
-The audit covers all 72 pages at 1440, 768, 390, and 320 pixels; unique titles and descriptions; business schema; public terminology; headings and labels; broken images, fonts, anchors, and routes; malformed select options; overflow; menus; FAQs; portfolio device views; schedule filters; everyday scenarios; both service guides and their carried-over choices; detailed-page inquiry links; all five galleries with keyboard navigation and focus restoration; short inquiry fields and optional details; local booking-request preparation; example forms; inquiry validation, failure, and success; downloads; reduced motion; and no-JavaScript rendering. Inquiry delivery is mocked during tests; no real message is sent.
+The audit covers all 78 pages at 1440, 768, 390, and 320 pixels; unique titles and descriptions; business schema; public terminology; headings and labels; broken images, fonts, anchors, and routes; malformed select options; overflow; menus; FAQs; portfolio device views; schedule filters; everyday scenarios; both service guides and their carried-over choices; detailed-page inquiry links; all five galleries with keyboard navigation and focus restoration; short inquiry fields and optional details; local booking-request preparation; example forms; inquiry validation, failure, and success; downloads; reduced motion; and no-JavaScript rendering. Inquiry delivery is mocked during tests; no real message is sent.
 
-Screenshots and results are written to ignored `artifacts/`. The capture script records every page at desktop, tablet, and phone sizes for visual inspection. Automated checks do not replace a full assistive-technology audit.
+Screenshots and results are written to `artifacts/`. The capture script records every page at desktop, tablet, and phone sizes for visual inspection. Automated checks do not replace a full assistive-technology audit.
 
 ## Assets and performance
 
@@ -108,3 +112,13 @@ Fonts and WebP photographs are self-hosted. Font licenses are in `public/fonts/`
 The image library contains 24 original stock photographs. Run `node scripts/process-photos.mjs` with the same Playwright configuration to produce 640px and 960px variants and update image dimensions. Most new photo components select a suitable source with `srcset`; full-size images remain available in the gallery. Gallery links work without JavaScript, and native dialogs support keyboard browsing when JavaScript is enabled.
 
 Photography sources and design decisions are documented in `docs/asset-sources.md` and `docs/design-system.md`.
+
+## Search configuration
+
+The site targets US small businesses. The build includes 27 indexable pages in `sitemap.xml` and 51 noindex pages (50 fictional examples and the 404 page). Example design write-ups under `/examples/` remain indexable; fictional business pages under `/demos/` do not.
+
+`vercel.json` declares the static build output, trailing-slash URLs, and a permanent `www.skipmanual.com` to `skipmanual.com` redirect. Deploy the updated project to apply that configuration. On another host, configure the equivalent host redirect and a true 404 response.
+
+`npm run audit:seo` checks canonicals, social URLs, US entity data, visible FAQ/schema agreement, descriptive service pages, unique metadata, crawlable internal links, sitemap membership, and industry-content similarity. Results are in `artifacts/seo/results.json`. It checks local output, not search rankings or Google rich-result eligibility.
+
+See [the search map](docs/seo-search-map.md) and [SEO handoff](docs/seo-handoff.md) for evidence and post-publication steps.

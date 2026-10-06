@@ -13,55 +13,55 @@
   },
   {
     "path": "/services/business-websites/",
-    "title": "Business-ready website for Local Businesses | SkipManual",
+    "title": "Small Business Website Design Services | SkipManual",
     "demo": false,
     "noindex": false
   },
   {
     "path": "/services/inquiry-follow-up/",
-    "title": "Automatic inquiry follow-up for Local Businesses | SkipManual",
+    "title": "Automated Lead Follow-Up for Small Businesses | SkipManual",
     "demo": false,
     "noindex": false
   },
   {
     "path": "/services/missed-call-texts/",
-    "title": "Missed-call text replies for Local Businesses | SkipManual",
+    "title": "Missed Call Text Back Service for Businesses | SkipManual",
     "demo": false,
     "noindex": false
   },
   {
     "path": "/services/review-requests/",
-    "title": "Review requests & reminders for Local Businesses | SkipManual",
+    "title": "Automated Review Requests for Local Businesses | SkipManual",
     "demo": false,
     "noindex": false
   },
   {
     "path": "/services/on-page-seo/",
-    "title": "On-page SEO foundations for Local Businesses | SkipManual",
+    "title": "On-Page SEO Services for Small Businesses | SkipManual",
     "demo": false,
     "noindex": false
   },
   {
     "path": "/",
-    "title": "Websites & Customer Follow-Up for Local Businesses | SkipManual",
+    "title": "Small Business Web Design & Follow-Up | SkipManual",
     "demo": false,
     "noindex": false
   },
   {
     "path": "/services/",
-    "title": "What’s Included in the $249 Website Package | SkipManual",
+    "title": "Website Design & Customer Follow-Up Services | SkipManual",
     "demo": false,
     "noindex": false
   },
   {
     "path": "/pricing/",
-    "title": "The $249/Month Website Package | SkipManual",
+    "title": "Small Business Website Pricing: $249/Month | SkipManual",
     "demo": false,
     "noindex": false
   },
   {
     "path": "/examples/",
-    "title": "Website Examples & Original Concepts | SkipManual",
+    "title": "Small Business Website Design Examples | SkipManual",
     "demo": false,
     "noindex": false
   },
@@ -100,6 +100,42 @@
     "title": "Page Not Found | SkipManual",
     "demo": false,
     "noindex": true
+  },
+  {
+    "path": "/industries/",
+    "title": "Website Design for Local Business Industries | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/industries/electricians/",
+    "title": "Electrician Website Design & Follow-Up | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/industries/roofers/",
+    "title": "Roofing Website Design for Contractors | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/industries/plumbers/",
+    "title": "Plumber Website Design & Customer Follow-Up | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/industries/wellness/",
+    "title": "Wellness & Fitness Website Design | SkipManual",
+    "demo": false,
+    "noindex": false
+  },
+  {
+    "path": "/industries/restaurants/",
+    "title": "Restaurant Website Design & Inquiry Follow-Up | SkipManual",
+    "demo": false,
+    "noindex": false
   },
   {
     "path": "/examples/current-electric/",

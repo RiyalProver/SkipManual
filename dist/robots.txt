@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://skipmanual.com/sitemap.xml

@@ -3,7 +3,9 @@ import { packageServices } from './package.mjs';
 export const site = {
   name: 'SkipManual',
   description: 'A professional 10–20 page website, automatic inquiry follow-up, missed-call text replies, review requests, and on-page SEO for local businesses. $249/month with SkipManual.',
-  url: process.env.PUBLIC_SITE_URL || '',
+  url: (process.env.PUBLIC_SITE_URL || 'https://skipmanual.com').replace(/\/$/, ''),
+  areaServed: { '@type': 'Country', name: 'United States', identifier: 'US' },
+  language: 'en-US',
   email: process.env.PUBLIC_CONTACT_EMAIL || '',
   contactEndpoint: process.env.PUBLIC_CONTACT_ENDPOINT || '',
   bookingUrl: process.env.PUBLIC_BOOKING_URL || '',
