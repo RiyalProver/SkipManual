@@ -21,7 +21,7 @@ export const industries = [
     ],
   },
   {
-    slug:'roofers',name:'Roofers',service:'Roofing website design',example:'ridgeline-roofing',image:'roofing',
+    slug:'roofers',name:'Roofers',service:'Roofing website design',example:'ridgeline-roofing',image:'roof-shingles',
     title:'Roofing Website Design for Contractors | SkipManual',
     description:'Roofing website design for US contractors, with repair and replacement pages, project photos, and assessment requests. Website and follow-up: $249/month.',
     intro:'Roofing customers often start with uncertainty: a leak, visible wear, or a roof they may need to replace. We design roofing websites that explain the options and guide homeowners toward an assessment. The website should help them understand your work before they ask for a price.',
@@ -40,7 +40,7 @@ export const industries = [
     ],
   },
   {
-    slug:'plumbers',name:'Plumbers',service:'Plumber website design',example:'clearflow-plumbing',image:'plumbing',
+    slug:'plumbers',name:'Plumbers',service:'Plumber website design',example:'clearflow-plumbing',image:'plumbing-sink-work',
     title:'Plumber Website Design & Customer Follow-Up | SkipManual',
     description:'Plumber website design for US businesses: leaks, drains, water heaters, and clear visit requests. Get a 10–20 page website with follow-up for $249/month.',
     intro:'A plumbing website should help someone with a leaking faucet, a blocked drain, or no hot water find the right next step quickly. We build clear, mobile-friendly websites for US plumbing businesses, with service pages and inquiry paths that reflect how your team actually works.',
@@ -59,7 +59,7 @@ export const industries = [
     ],
   },
   {
-    slug:'wellness',name:'Wellness businesses',service:'Wellness website design',example:'form-studio',image:'pilates',
+    slug:'wellness',name:'Wellness businesses',service:'Wellness website design',example:'form-studio',image:'pilates-reformer',
     title:'Wellness & Fitness Website Design | SkipManual',
     description:'Website design for US wellness businesses, Pilates and fitness studios. Explain classes, first visits, and booking options with SkipManual’s $249/month package.',
     intro:'A first-time visitor to a wellness or fitness studio wants to know what the experience will feel like and whether it suits them. We design websites that explain your classes or services, introduce the people behind the business, and make the next step clear without requiring fitness knowledge.',

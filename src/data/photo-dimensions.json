@@ -94,5 +94,85 @@
   "roofing": {
     "width": 1600,
     "height": 1067
+  },
+  "roof-crew": {
+    "width": 1280,
+    "height": 850
+  },
+  "roof-repair": {
+    "width": 1280,
+    "height": 850
+  },
+  "roof-shingles": {
+    "width": 1280,
+    "height": 849
+  },
+  "roof-tiles": {
+    "width": 1280,
+    "height": 853
+  },
+  "roof-tile-work": {
+    "width": 1280,
+    "height": 853
+  },
+  "roof-metal": {
+    "width": 1280,
+    "height": 960
+  },
+  "electrical-panel": {
+    "width": 1280,
+    "height": 1178
+  },
+  "electrical-connection": {
+    "width": 1280,
+    "height": 960
+  },
+  "lighting-install": {
+    "width": 1920,
+    "height": 1283
+  },
+  "plumber-pipes": {
+    "width": 1280,
+    "height": 850
+  },
+  "plumbing-repair": {
+    "width": 1280,
+    "height": 853
+  },
+  "sink-repair": {
+    "width": 1200,
+    "height": 1768
+  },
+  "water-heater-install": {
+    "width": 680,
+    "height": 510
+  },
+  "drain-lining": {
+    "width": 1280,
+    "height": 853
+  },
+  "pilates-reformer": {
+    "width": 883,
+    "height": 483
+  },
+  "pilates-equipment": {
+    "width": 1280,
+    "height": 960
+  },
+  "kitchen-prep": {
+    "width": 1280,
+    "height": 1924
+  },
+  "plumbing-sink-work": {
+    "width": 1920,
+    "height": 1280
+  },
+  "water-heater-repair": {
+    "width": 1920,
+    "height": 2876
+  },
+  "drain-inspection": {
+    "width": 1920,
+    "height": 1440
   }
 }
