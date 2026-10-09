@@ -1,6 +1,8 @@
 # Asset sources
 
-The photographs are illustrative stock images used inside fictional demonstration websites. They are not represented as actual SkipManual work, customers, staff, or premises.
+The photographs illustrate fictional demonstration websites. They are not represented as actual SkipManual work, customers, staff, or premises.
+
+The October visual refresh added 20 work, kitchen, and Pilates photographs from Wikimedia Commons, including candid roofing job sites. `src/data/work-photos.json` records each image's source, creator, license, and modifications. These credits are also published in the site's “Photograph sources & licenses” section, with links to the adapted WebP images. Adapted images retain their source licenses. The original Unsplash assets are listed below; the former generic house, bathroom, and fitness photos have been replaced where they did not match the service being shown.
 
 | Asset | Original source |
 | --- | --- |

@@ -2,7 +2,7 @@
 
 A static, multi-page agency website with five original, explicitly fictional example websites. The production build has **no runtime dependencies** and renders real HTML for all 78 routes. Each example contains 10 pages.
 
-For the latest completed work and intentionally deferred connections, see [the project handoff](docs/project-handoff.md).
+For the current visual design, prototypes, and review steps, see [the October conversion redesign](docs/conversion-redesign.md). The earlier [project handoff](docs/project-handoff.md) records the original scope and intentionally deferred connections.
 
 ## Run locally
 
@@ -56,6 +56,12 @@ The form POSTs JSON containing `name`, `business`, `email`, `phone`, `businessTy
 | `src/components/photos.mjs` | Responsive images with actual dimensions, local source variants, and alt text |
 | `src/components/ui.mjs` | Shared layout, metadata/schema, navigation, footer, buttons, pricing, and portfolio previews |
 | `src/pages/agency.mjs` | Main agency pages and individual concept pages |
+| `src/pages/conversion.mjs` | Current homepage, visual services overview, portfolio, and package presentation |
+| `src/components/customer-film.mjs` | Four animated customer journeys with six chapters each and readable transcripts |
+| `src/components/visual-sections.mjs` | Full-width work photography for the homepage and setup process |
+| `src/scripts/customer-film.js` | Playback, seeking, chapter controls, fullscreen, and reduced-motion handling |
+| `src/styles/visual-stories.css` | Animated player, full-width image treatments, and responsive layouts |
+| `src/pages/reference-trades.mjs` | Distinct electrical, plumbing, and roofing prototypes and their navigation |
 | `src/pages/agency-redesign.mjs` | White homepage, services, five service details, how-it-works, booking, and short inquiry form |
 | `src/pages/demos.mjs` | Shared example shell and restaurant, electrical, and Pilates websites |
 | `src/pages/trades.mjs` | Core plumbing and roofing pages, service finder, and roof guide |
@@ -65,6 +71,8 @@ The form POSTs JSON containing `name`, `business`, `email`, `phone`, `businessTy
 | `src/styles/demos.css` | Shared example styling and the first three visual identities |
 | `src/styles/trades.css` | Distinct plumbing and roofing visual identities and responsive rules |
 | `src/styles/agency.css` | White agency design, photography, direct navigation, and mobile action bar |
+| `src/styles/conversion.css` | Current warm agency styling, visual walkthrough, and responsive design |
+| `src/styles/reference-trades.css` | Blue/yellow electrical, navy/red plumbing, and black/blue roofing designs |
 | `src/styles/example-expansion.css` | Detailed example pages, expanded navigation, galleries, and mobile actions |
 | `src/scripts/client.js` | Menus, device previews, scenario selectors, service guides, schedule filters, forms, and brief downloads |
 | `scripts/build.mjs` | Static page generation, assets, robots, sitemap, and route manifest |
@@ -109,7 +117,7 @@ Screenshots and results are written to `artifacts/`. The capture script records 
 
 Fonts and WebP photographs are self-hosted. Font licenses are in `public/fonts/`. WOFF files are losslessly compressed from the source TTF files by `node scripts/optimize-fonts.mjs`; the source TTF files are excluded from clean production builds. The page uses no framework runtime, animation library, tracking script, or remote font dependency.
 
-The image library contains 24 original stock photographs. Run `node scripts/process-photos.mjs` with the same Playwright configuration to produce 640px and 960px variants and update image dimensions. Most new photo components select a suitable source with `srcset`; full-size images remain available in the gallery. Gallery links work without JavaScript, and native dialogs support keyboard browsing when JavaScript is enabled.
+The image library contains the original 24 Unsplash assets plus 20 work, kitchen, and Pilates photographs documented in `src/data/work-photos.json`. Public photo credits include source links and licenses. Run `node scripts/process-photos.mjs` with the same Playwright configuration to produce 640px and 960px variants and update image dimensions. Photo components select a suitable source with `srcset`; full-size images remain available in the gallery. Gallery links work without JavaScript, and native dialogs support keyboard browsing when JavaScript is enabled.
 
 Photography sources and design decisions are documented in `docs/asset-sources.md` and `docs/design-system.md`.
 
