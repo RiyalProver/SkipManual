@@ -47,7 +47,7 @@ The form POSTs JSON containing `name`, `business`, `email`, `phone`, `businessTy
 | `src/data/seo.mjs` | Service search content, FAQ copy, breadcrumbs, and linked structured data |
 | `src/data/industries.mjs` | Distinct guidance for the five priority US business industries |
 | `src/pages/industries.mjs` | Industry hub and five industry service pages |
-| `src/data/site.mjs` | Agency identity, offer, navigation, process, FAQ, and a reserved collection for future verified testimonials |
+| `src/data/site.mjs` | Agency identity, offer, navigation, process, FAQ, and owner-supplied client ratings with clearly labeled feedback summaries |
 | `src/data/examples.mjs` | Example identities, design rationale, page links, and features |
 | `src/data/package.mjs` | Confirmed package services and everyday customer-conversation scenarios |
 | `src/data/example-content.mjs` | Detailed pages, galleries, FAQs, and photography for the five example businesses |
@@ -56,9 +56,12 @@ The form POSTs JSON containing `name`, `business`, `email`, `phone`, `businessTy
 | `src/components/photos.mjs` | Responsive images with actual dimensions, local source variants, and alt text |
 | `src/components/ui.mjs` | Shared layout, metadata/schema, navigation, footer, buttons, pricing, and portfolio previews |
 | `src/pages/agency.mjs` | Main agency pages and individual concept pages |
-| `src/pages/conversion.mjs` | Current homepage, visual services overview, portfolio, and package presentation |
+| `src/components/studio-home.mjs` | Current studio homepage, original website illustration, services, design examples, process, and client feedback |
+| `src/styles/studio-home.css` | Responsive homepage and smooth three-scene illustration |
+| `src/scripts/studio-loop.js` | Automatic homepage loop, persistent pause, visibility, and reduced-motion handling |
+| `src/pages/conversion.mjs` | Visual services overview, portfolio, and package presentation |
 | `src/components/customer-film.mjs` | Four animated customer journeys with six chapters each and readable transcripts |
-| `src/components/visual-sections.mjs` | Full-width work photography for the homepage and setup process |
+| `src/components/visual-sections.mjs` | Earlier photographic hero and setup treatments |
 | `src/scripts/customer-film.js` | Playback, seeking, chapter controls, fullscreen, and reduced-motion handling |
 | `src/styles/visual-stories.css` | Animated player, full-width image treatments, and responsive layouts |
 | `src/pages/reference-trades.mjs` | Distinct electrical, plumbing, and roofing prototypes and their navigation |
@@ -107,6 +110,7 @@ With the local server running:
 npm run audit
 npm run audit:seo
 npm run capture:pages
+node scripts/review-studio-home.mjs
 ```
 
 The audit covers all 78 pages at 1440, 768, 390, and 320 pixels; unique titles and descriptions; business schema; public terminology; headings and labels; broken images, fonts, anchors, and routes; malformed select options; overflow; menus; FAQs; portfolio device views; schedule filters; everyday scenarios; both service guides and their carried-over choices; detailed-page inquiry links; all five galleries with keyboard navigation and focus restoration; short inquiry fields and optional details; local booking-request preparation; example forms; inquiry validation, failure, and success; downloads; reduced motion; and no-JavaScript rendering. Inquiry delivery is mocked during tests; no real message is sent.

@@ -74,4 +74,6 @@ body:not(.demo-body) .work-hero .button { background:#e1ebae; color:#203427; min
  .theme-form .example-detail-hero:after { background:linear-gradient(90deg,#30263eef,#30263eb3); }
  .theme-olive .example-detail-hero:after { background:linear-gradient(90deg,#233522ed,#233522b3); }
 }
-@media(prefers-reduced-motion:reduce) { .film-beat { transition:none; }.film-background { transform:none!important; will-change:auto; }.film-ring { animation:none!important; } }
+@keyframes film-scene-enter { from { opacity:.35; } to { opacity:1; } }
+.film-scene:not([hidden]) { animation:film-scene-enter .7s ease-out; }
+@media(prefers-reduced-motion:reduce) { .film-scene { animation:none!important; }.film-beat { transition:none; }.film-background { transform:none!important; will-change:auto; }.film-ring { animation:none!important; } }

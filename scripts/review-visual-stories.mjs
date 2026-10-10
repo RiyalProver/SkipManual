@@ -10,8 +10,8 @@ try {
    await page.goto('http://127.0.0.1:4321'+route,{waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);
    await page.screenshot({path:`artifacts/visual-stories/${label}-${width}.png`});
    if(label==='home'){
-    await page.locator('[data-film-chapter="2"]').click();
-    await page.locator('[data-film-theater]').screenshot({path:`artifacts/visual-stories/film-${width}.png`});
+    await page.locator('[data-studio-step="2"]').click();
+    await page.locator('[data-studio-loop]').screenshot({path:`artifacts/visual-stories/studio-loop-${width}.png`});
     await page.screenshot({path:`artifacts/visual-stories/full-home-${width}.png`,fullPage:true});
    }
   }

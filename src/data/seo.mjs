@@ -89,6 +89,8 @@ export function structuredData({path,title,description,content,service,demo,noin
   const pageId=absolute(path+'#webpage');
   const websiteId=absolute('/#website');
   const business={'@type':'LocalBusiness','@id':businessId,name:site.name,url:site.url+'/',description:site.description,areaServed:site.areaServed,image:absolute('/images/social-card.png'),...(site.email?{email:site.email}:{}),hasOfferCatalog:{'@type':'OfferCatalog',name:'Website and customer follow-up package',itemListElement:[{'@type':'Offer',url:absolute('/pricing/'),name:'Website and follow-up package, billed monthly',price:offer.price,priceCurrency:offer.currency,description:`${offer.confirmedFeatures.join(', ')}. $249 per month; full scope, fees, and terms confirmed before agreement.`,itemOffered:{'@type':'Service',name:'Website design and customer follow-up',provider:{'@id':businessId},areaServed:site.areaServed}}]}};
+  // Prices belong on the pricing page, including in machine-readable metadata.
+  if(path!=='/pricing/')delete business.hasOfferCatalog;
   const type=path==='/about/'?'AboutPage':['/contact/','/book/'].includes(path)?'ContactPage':['/examples/','/industries/','/services/'].includes(path)?'CollectionPage':'WebPage';
   const page={'@type':type,'@id':pageId,url:absolute(path),name:plainText(title),description,inLanguage:site.language,isPartOf:{'@id':websiteId},about:{'@id':businessId}};
   const graph=[business,{'@type':'WebSite','@id':websiteId,name:site.name,url:site.url+'/',inLanguage:site.language,publisher:{'@id':businessId}},page];

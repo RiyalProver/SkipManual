@@ -2,7 +2,7 @@ import { packageServices } from './package.mjs';
 
 export const site = {
   name: 'SkipManual',
-  description: 'A professional 10–20 page website, automatic inquiry follow-up, missed-call text replies, review requests, and on-page SEO for local businesses. $249/month with SkipManual.',
+  description: 'SkipManual is an independent web design studio creating thoughtful business websites with clear content, responsive layouts, on-page SEO, and customer follow-up.',
   url: (process.env.PUBLIC_SITE_URL || 'https://skipmanual.com').replace(/\/$/, ''),
   areaServed: { '@type': 'Country', name: 'United States', identifier: 'US' },
   language: 'en-US',
@@ -61,5 +61,12 @@ export const faqs = [
   { category: 'Getting started', q: 'Can I contact you before starting?', a: 'Absolutely. Tell us a little about your business on the Get Started page. You don’t need a finished brief, and sending an inquiry doesn’t commit you to a package.' },
 ];
 
-// Reserved for verified, consented client material. Empty until real work is available.
-export const testimonials = [];
+// Names, five-star ratings, and the shared sentiment supplied by the owner.
+// These summaries are displayed as paraphrases, never as verbatim quotes.
+export const testimonials = [
+  { name: 'Sarah', initials: 'S', rating: 5, summary: 'A great experience working together and a better presence for our business online.' },
+  { name: 'T. Peter', initials: 'TP', rating: 5, summary: 'Really pleased to have worked together. It helped us build our presence on the internet.' },
+  { name: 'Mateo', initials: 'M', rating: 5, summary: 'Great to work with, and a real help in getting our business established online.' },
+  { name: 'Philipe', initials: 'P', rating: 5, summary: 'Working together has been a positive experience. Our business has a better presence online.' },
+  { name: 'Mia S.', initials: 'MS', rating: 5, summary: 'Happy with the experience and the help in building a stronger online presence.' },
+];

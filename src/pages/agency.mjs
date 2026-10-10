@@ -1,7 +1,8 @@
 import { photoCredits } from '../components/photo-credits.mjs';
 import {photo} from '../components/photos.mjs';
 import {redesignedContact,additionalAgencyPages} from './agency-redesign.mjs';
-import {conversionHome as redesignedHome,conversionServices as redesignedServices,conversionExamples} from './conversion.mjs';
+import {conversionServices as redesignedServices,conversionExamples} from './conversion.mjs';
+import {studioHome as redesignedHome} from '../components/studio-home.mjs';
 import { site, faqs } from '../data/site.mjs';
 import { examples } from '../data/examples.mjs';
 import { icon, mark, button, textLink, eyebrow, priceCard, faqList, preview, devicePreview, workCard, pageHero, cta, escape } from '../components/ui.mjs';
@@ -20,7 +21,7 @@ function information() { return `${pageHero('Website information','A clear note<
 
 export const agencyPages = [
   ...additionalAgencyPages,
-  { path:'/', title:'Small Business Web Design & Follow-Up | SkipManual', description:'US small business web design with 10–20 pages, lead follow-up, missed-call texts, and review requests for $249/month. Explore SkipManual’s website examples.', render:redesignedHome },
+  { path:'/', title:'Business Website Design & Redesign Studio | SkipManual', description:'Thoughtful website design for your business. Explore distinctive designs, clear content, responsive pages, and a straightforward process with SkipManual.', bodyClass:'studio-home', render:redesignedHome },
   { path:'/services/', title:'Website Design & Customer Follow-Up Services | SkipManual', description:'A 10–20 page website, inquiry follow-up, missed-call text replies, review requests, and on-page SEO. Explore the five services in SkipManual’s $249/month package.', render:redesignedServices },
   { path:'/pricing/', title:'Small Business Website Pricing: $249/Month | SkipManual', description:'Explore SkipManual’s $249/month local business website package. We confirm your project scope, full costs, and terms before you commit.', render:pricing },
   { path:'/examples/', title:'Small Business Website Design Examples | SkipManual', description:'Explore five original website examples for electricians, roofers, plumbers, wellness studios, and restaurants. Browse every page of these fictional business concepts.', render:conversionExamples },

@@ -77,9 +77,10 @@ try {
   await page.keyboard.press('Escape');assert(!(await page.locator('.mobile-nav').evaluate(e=>e.open)));
   assert.equal(await page.evaluate(()=>getComputedStyle(document.body).backgroundColor),'rgb(255, 254, 250)','Agency background should use the warm paper surface');
   assert(await page.locator('.mobile-action-bar').isVisible());
-  assert.match(await page.locator('.work-hero-price').textContent(),/249/);
-  assert.equal(await page.locator('[data-journey]').count(),4);
-  assert.equal(await page.locator('[data-film-journey]:visible').count(),1);
+  assert(!/\$\s*\d|249/.test(await page.content()),'Homepage should not show package prices');
+  assert.equal(await page.locator('[data-studio-step]').count(),3);
+  assert.equal(await page.locator('[data-studio-frame][aria-hidden="false"]').count(),1);
+  assert.equal(await page.locator('.studio-review').count(),5);
   // All five example sites have ten reachable pages, complete menus, and usable image galleries.
   for(const slug of ['olive-and-ember','current-electric','form-studio','clearflow-plumbing','ridgeline-roofing']) {
     assert.equal(pages.filter(p=>p.path.startsWith(`/demos/${slug}/`)).length,10);
@@ -196,7 +197,7 @@ try {
   const missing=await fetch(base+'/not-a-real-page/');assert.equal(missing.status,404);
   await page.emulateMedia({reducedMotion:'reduce'});await page.goto(base+'/');assert.equal(await page.evaluate(()=>getComputedStyle(document.documentElement).scrollBehavior),'auto');
   const noJS=await browser.newContext({javaScriptEnabled:false});const noJSPage=await noJS.newPage();await noJSPage.goto(base+'/');assert.equal(await noJSPage.locator('h1').count(),1);assert.equal(await noJSPage.locator('.portfolio-card').count(),3);
-  await noJSPage.locator('.film-transcript summary').click();assert.equal(await noJSPage.locator('.film-transcript li:visible').count(),24);
+  assert(await noJSPage.locator('.studio-static-note').isVisible());assert(await noJSPage.locator('[data-studio-controls]').isHidden());
   await noJSPage.goto(base+'/demos/clearflow-plumbing/');assert.equal(await noJSPage.locator('[data-choice-panel]:visible').count(),4);
   await noJSPage.goto(base+'/demos/ridgeline-roofing/repair-or-replace/');assert.equal(await noJSPage.locator('[data-choice-panel]:visible').count(),3);
   for(const route of ['/demos/clearflow-plumbing/request-a-visit/','/demos/ridgeline-roofing/request-an-assessment/']) { await noJSPage.goto(base+route);assert(await noJSPage.locator('[type="submit"]').isDisabled()); }

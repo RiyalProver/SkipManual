@@ -17,7 +17,7 @@ try {
       await page.goto(base+route,{waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);
       await page.addScriptTag({path:'artifacts/conversion/axe.min.js'});
       await check(`${width} ${route}`);
-      if(route==='/'){
+      if(route==='/services/'){
         await page.screenshot({path:`artifacts/conversion/home-${width}-viewport.png`});
         for(const choice of ['missed-call','roof-inquiry','review','getting-started']){
           await page.locator('[data-journey="'+choice+'"]').click();
